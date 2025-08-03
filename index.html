@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guías Completas para Dioramas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 1.2em; /* 20% más grande que el tamaño base */
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f3f0 0%, #e8e4df 100%);
+            color: #2c2c2c;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            backdrop-filter: blur(10px);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #d4a574;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #8b4513;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            color: #666;
+            font-style: italic;
+        }
+
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .guide-card {
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 5px solid;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .guide-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, rgba(212, 165, 116, 0.5), transparent);
+        }
+
+        .guide-card:nth-child(1) { border-left-color: #d2691e; }
+        .guide-card:nth-child(2) { border-left-color: #cd853f; }
+        .guide-card:nth-child(3) { border-left-color: #daa520; }
+        .guide-card:nth-child(4) { border-left-color: #b8860b; }
+        .guide-card:nth-child(5) { border-left-color: #8b4513; }
+        .guide-card:nth-child(6) { border-left-color: #a0522d; }
+        .guide-card:nth-child(7) { border-left-color: #9acd32; }
+
+        .guide-card h3 {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .guide-card p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        .guide-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4a574, #b8860b);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
+            font-size: 0.9em;
+        }
+
+        .guide-button:hover {
+            background: linear-gradient(135deg, #b8860b, #8b4513);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 165, 116, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+            color: #888;
+        }
+
+        .footer p {
+            font-size: 0.9em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                font-size: 1.1em;
+                padding: 15px;
+            }
+
+            .container {
+                padding: 25px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .guides-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .guide-card {
+                padding: 20px;
+            }
+
+            .guide-card h3 {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 1em;
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .guide-card {
+                padding: 15px;
+            }
+
+            .guide-button {
+                padding: 10px 20px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎨 Guías Completas para Dioramas</h1>
+            <p>Todo lo que necesitas saber para crear dioramas increíbles</p>
+        </header>
+
+        <main class="guides-grid">
+            <article class="guide-card">
+                <h3>Colores Base Derivados de Tizas</h3>
+                <p>Descubre cómo crear una paleta completa de colores utilizando tizas como base para tus dioramas.</p>
+                <a href="Colores Base Derivados de Tizas.html" class="guide-button">Ver Guía</a>
+            </article>
+
+            <article class="guide-card">
+                <h3>Componentes para Dioramas</h3>
+                <p>Explora todos los elementos esenciales que necesitas para construir dioramas realistas y detallados.</p>
+                <a href="Componentes para dioramas.html" class="guide-button">Ver Guía</a>
+            </article>
+
+            <article class="guide-card">
+                <h3>Guía de Pigmentos para Dioramas</h3>
+                <p>Aprende sobre los diferentes tipos de pigmentos y cómo utilizarlos efectivamente en tus proyectos.</p>
+                <a href="Guía de Pigmentos para Dioramas.html" class="guide-button">Ver Guía</a>
+            </article>
+
+            <article class="guide-card">
+                <h3>Preparación de Pigmentos DIY</h3>
+                <p>Guía paso a paso para crear tus propios pigmentos caseros con materiales accesibles.</p>
+                <a href="Preparación de Pigmentos DIY.html" class="guide-button">Ver Guía</a>
+            </article>
+
+            <article class="guide-card">
+                <h3>Problemas al Hacer Dioramas</h3>
+                <p>Soluciones a los problemas más comunes que enfrentan los creadores de dioramas.</p>
+                <a href="Problemas al hacer Dioramas.html" class="guide-button">Ver Guía</a>
+            </article>
+
+            <article class="guide-card">
+                <h3>Materiales para Dioramas</h3>
+                <p>Lista completa de materiales recomendados para diferentes tipos de proyectos de dioramas.</p>
+                <a href="Materiales para dioramas.html" class="guide-button">Ver Guía</a>
+            </article>
+
+            <article class="guide-card">
+                <h3>Ventajas de Pigmentos y Pinturas</h3>
+                <p>Comparativa detallada entre diferentes tipos de pigmentos y pinturas para dioramas.</p>
+                <a href="Ventajas de los Pigmentos y pinturas.html" class="guide-button">Ver Guía</a>
+            </article>
+        </main>
+
+        <footer class="footer">
+            <p>📚 Colección de guías para la creación de dioramas realistas</p>
+            <p>Actualizado regularmente con nuevas técnicas y materiales</p>
+        </footer>
+    </div>
+</body>
+</html>

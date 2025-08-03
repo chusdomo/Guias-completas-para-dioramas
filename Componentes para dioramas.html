@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes para Dioramas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .emoji {
+            font-size: 1.5em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        
+        th {
+            background: #34495e;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 3px solid #2c3e50;
+        }
+        
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ecf0f1;
+            vertical-align: top;
+            line-height: 1.6;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+            transform: scale(1.01);
+            transition: all 0.3s ease;
+        }
+        
+        .category-cell {
+            background: #3498db;
+            color: white;
+            font-weight: bold;
+            border-right: 3px solid #2980b9;
+        }
+        
+        .materials-cell {
+            background: #ecf0f1;
+        }
+        
+        .bonus-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        
+        .bonus-section h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .kit-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .kit-item {
+            background: rgba(255,255,255,0.2);
+            padding: 8px 12px;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            table {
+                font-size: 14px;
+            }
+            
+            th, td {
+                padding: 10px;
+            }
+            
+            .kit-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Componentes para Dioramas</h1>
+        
+        <div class="section">
+            <div class="section-header">
+                <span class="emoji">🧱</span>
+                <span>1. Estructura Base y Terreno</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Materiales recomendados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="category-cell">Soporte</td>
+                        <td class="materials-cell">Tablero MDF, cartón pluma, cartón doble capa, bandejas de porexpán</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Volumen/Terreno</td>
+                        <td class="materials-cell">Poliestireno expandido (blanco o azul), espuma aislante en spray, corcho natural o prensado</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Modelado fino</td>
+                        <td class="materials-cell">Pasta para modelar (Das, Milliput, plastilina epoxy), masilla de relleno, arcilla polimérica</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Adhesivos base</td>
+                        <td class="materials-cell">Cola blanca (vinílica), silicona caliente, cinta de doble cara, cinta de carrocero</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <span class="emoji">🎨</span>
+                <span>2. Pintura y Acabado</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Materiales recomendados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="category-cell">Acrílicos base</td>
+                        <td class="materials-cell">Negro, blanco, rojo, amarillo, azul, tierra sombra, verde oliva, gris neutro</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Barnices</td>
+                        <td class="materials-cell">Mate, satinado y brillante (en spray o pincel)</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Auxiliares</td>
+                        <td class="materials-cell">Medium mate, retardante, diluyente acrílico</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Técnicas especiales</td>
+                        <td class="materials-cell">Óleos para efectos, tintas, pigmentos en polvo, lápices acuarelables, pinturas metálicas</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Herramientas</td>
+                        <td class="materials-cell">Pinceles variados, esponjas, aerógrafo (si tienes), pipetas, paletas, vasos mezcladores</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <span class="emoji">🛠</span>
+                <span>3. Herramientas básicas y de corte</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Función</th>
+                        <th>Herramientas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="category-cell">Corte</td>
+                        <td class="materials-cell">Cutter, bisturí de modelismo, tijeras fuertes, sierra manual de miniatura</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Medida</td>
+                        <td class="materials-cell">Regla metálica, escuadra, compás</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Modelado</td>
+                        <td class="materials-cell">Espátulas, buriles, punzones, limas, cepillos de cerdas duras</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Eléctricas</td>
+                        <td class="materials-cell">Dremel/multiherramienta, mini taladro con brocas finas</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Seguridad</td>
+                        <td class="materials-cell">Guantes de nitrilo, gafas protectoras, mascarilla antipolvo/pintura</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <span class="emoji">🌱</span>
+                <span>4. Vegetación y Naturaleza</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Materiales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="category-cell">Césped y hierba</td>
+                        <td class="materials-cell">Flocado verde (varios tonos), fibras electrostáticas, césped de papel maché</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Árboles</td>
+                        <td class="materials-cell">Alambre + espuma, ramas naturales tratadas, kits de árboles, musgo seco</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Rocas y tierra</td>
+                        <td class="materials-cell">Corcho triturado, arena tamizada, grava fina, piedras reales pequeñas</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Agua</td>
+                        <td class="materials-cell">Resina bicomponente, barniz vitral, silicona transparente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <span class="emoji">🏗</span>
+                <span>5. Elementos estructurales y arquitectónicos</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Materiales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="category-cell">Estructuras</td>
+                        <td class="materials-cell">Palillos, varillas de madera, palitos de helado, perfiles de plástico (Evergreen)</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Muro/pared</td>
+                        <td class="materials-cell">Cartón pluma, poliestireno grabado, cartón gofrado</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Tejados y suelos</td>
+                        <td class="materials-cell">Tejas hechas con arcilla o cartón, lija para asfalto, baldosas impresas o texturizadas</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Detalles urbanos</td>
+                        <td class="materials-cell">Hilos (cables), rejillas de colador (alcantarillas), botones, tapas de bolígrafos, restos de electrónica</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <span class="emoji">🔧</span>
+                <span>6. Complementos y detalles finales</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Elementos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="category-cell">Figuras</td>
+                        <td class="materials-cell">Escala 1:35, 1:72, etc., civiles, soldados, animales, personajes fantásticos</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Accesorios</td>
+                        <td class="materials-cell">Barriles, cajas, bidones, mochilas, mobiliario, señales</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Suciedad y desgaste</td>
+                        <td class="materials-cell">Pigmentos, tizas pastel, sal para desconchones, polvo casero (ceniza, talco, café molido)</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Efectos especiales</td>
+                        <td class="materials-cell">Algodón para humo, LED para luces, cables finos, imanes para modular partes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <span class="emoji">📦</span>
+                <span>7. Organización y almacenamiento</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Recomendación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="category-cell">Cajas modulares</td>
+                        <td class="materials-cell">Para piezas pequeñas, tornillos, figuras, etc.</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Tarros reciclados</td>
+                        <td class="materials-cell">Para pigmentos, arena, agua sucia</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Bandejas</td>
+                        <td class="materials-cell">Para agrupar proyectos en curso</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Etiquetas</td>
+                        <td class="materials-cell">Para mantener tu "arsenal" ordenado y localizado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <span class="emoji">🧪</span>
+                <span>8. Materiales caseros multiuso</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Usos posibles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="category-cell">Cartón de embalaje</td>
+                        <td class="materials-cell">Paredes, estructuras</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Tapas de botellas</td>
+                        <td class="materials-cell">Barriles, bases</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Latas y envases</td>
+                        <td class="materials-cell">Fachadas metálicas, cubiertas</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Bolsas de té secas</td>
+                        <td class="materials-cell">Hojas y tierra</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Cables viejos</td>
+                        <td class="materials-cell">Tuberías, conducciones</td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">Tubos de papel higiénico</td>
+                        <td class="materials-cell">Torres, columnas, chatarra</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="bonus-section">
+            <h3>🧰 BONUS: Kit de emergencia</h3>
+            <p>Ten siempre una cajita lista con:</p>
+            <div class="kit-list">
+                <div class="kit-item">• Cola blanca</div>
+                <div class="kit-item">• Pintura acrílica negra, blanca y tierra sombra</div>
+                <div class="kit-item">• Cutter afilado</div>
+                <div class="kit-item">• Mini pinceles</div>
+                <div class="kit-item">• Trozos de corcho y cartón</div>
+                <div class="kit-item">• Miniaturas genéricas</div>
+                <div class="kit-item">• Pigmentos tierra/óxido</div>
+                <div class="kit-item">• Flocado básico</div>
+                <div class="kit-item">• Cinta de carrocero</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

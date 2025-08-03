@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas en Dioramas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #2980b9;
+        }
+        
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+            line-height: 1.4;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        tr:hover {
+            background-color: #e8f4f8;
+        }
+        
+        .problema {
+            font-weight: bold;
+            color: #e74c3c;
+            width: 20%;
+        }
+        
+        .causa {
+            color: #f39c12;
+            width: 25%;
+        }
+        
+        .solucion {
+            color: #27ae60;
+            width: 27%;
+        }
+        
+        .prevencion {
+            color: #8e44ad;
+            width: 28%;
+        }
+        
+        .categoria {
+            background-color: #34495e !important;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .categoria td {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Problemas al hacer Dioramas</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>PROBLEMA</th>
+                    <th>CAUSA</th>
+                    <th>SOLUCIÓN</th>
+                    <th>PREVENCIÓN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS DE ESTRUCTURA Y BASE</td>
+                </tr>
+                <tr>
+                    <td class="problema">Base inestable o que se tambalea</td>
+                    <td class="causa">Material inadecuado (cartón fino), grosor insuficiente, construcción deficiente, apoyo desigual</td>
+                    <td class="solucion">Reforzar con listones de madera debajo, cambiar a base más rígida (MDF, contrachapado), nivelar superficie</td>
+                    <td class="prevencion">Usar bases de al menos 15mm de grosor, probar estabilidad antes de continuar, usar nivelador</td>
+                </tr>
+                <tr>
+                    <td class="problema">Deformación de la base por combadura</td>
+                    <td class="causa">Humedad, peso excesivo concentrado, material de baja calidad, cambios de temperatura</td>
+                    <td class="solucion">Secar completamente, reforzar con estructura interna, redistribuir peso, prensar con peso</td>
+                    <td class="prevencion">Sellar la base con imprimación, calcular peso máximo, usar soportes internos cruzados</td>
+                </tr>
+                <tr>
+                    <td class="problema">Grietas en la base</td>
+                    <td class="causa">Expansión/contracción del material, impactos, sobrecarga puntual, material defectuoso</td>
+                    <td class="solucion">Reparar con masilla para madera, reforzar zona con fibra de vidrio, cambiar sección dañada</td>
+                    <td class="prevencion">Usar maderas estables, evitar cambios bruscos de humedad, distribuir cargas</td>
+                </tr>
+                <tr>
+                    <td class="problema">Elementos se caen o despegan</td>
+                    <td class="causa">Adhesivo inadecuado, superficie mal preparada, peso excesivo, vibración, temperatura</td>
+                    <td class="solucion">Limpiar superficies con alcohol, usar adhesivo estructural, añadir fijaciones mecánicas</td>
+                    <td class="prevencion">Rugosidad superficie con lija, usar adhesivos específicos, probar resistencia antes</td>
+                </tr>
+                <tr>
+                    <td class="problema">Juntas entre secciones visibles</td>
+                    <td class="causa">Cortes imprecisos, diferencia de altura, falta de tratamiento de juntas</td>
+                    <td class="solucion">Usar masilla de carrocero, lijar a ras, texturizar para disimular</td>
+                    <td class="prevencion">Medir y cortar con precisión, usar herramientas guiadas, planificar juntas</td>
+                </tr>
+                <tr>
+                    <td class="problema">Hundimientos o desniveles inesperados</td>
+                    <td class="causa">Terreno no planificado, falta de soporte interno, material blando</td>
+                    <td class="solucion">Rellenar con espuma expansiva, añadir soportes ocultos, remodelar zona</td>
+                    <td class="prevencion">Hacer maqueta previa, calcular estructura interna, usar materiales adecuados</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS DE PINTURA Y ACABADOS</td>
+                </tr>
+                <tr>
+                    <td class="problema">Pintura se cuartea o descascara</td>
+                    <td class="causa">Superficie mal preparada, imprimación inadecuada, capas muy gruesas, incompatibilidad</td>
+                    <td class="solucion">Lijar totalmente, limpiar con desengrasante, aplicar imprimación específica y repintar</td>
+                    <td class="prevencion">Siempre usar imprimación compatible, limpiar superficie, aplicar capas de 0.1mm máximo</td>
+                </tr>
+                <tr>
+                    <td class="problema">Colores desiguales o manchados</td>
+                    <td class="causa">Mezcla insuficiente, aplicación irregular, contaminación del pincel, secado parcial</td>
+                    <td class="solucion">Lijar suavemente grano 400, limpiar y repintar con técnica uniforme, usar rodillo</td>
+                    <td class="prevencion">Mezclar 5 minutos mínimo, usar pinceles nuevos, mantener borde húmedo</td>
+                </tr>
+                <tr>
+                    <td class="problema">Pintura no seca correctamente (pegajosa)</td>
+                    <td class="causa">Humedad alta (+70%), temperatura baja (-15°C), capa gruesa, producto caducado</td>
+                    <td class="solucion">Mejorar ventilación, usar deshumidificador, aplicar calor 30°C, esperar más tiempo</td>
+                    <td class="prevencion">Controlar humedad 40-60%, temperatura 18-25°C, verificar fechas</td>
+                </tr>
+                <tr>
+                    <td class="problema">Marcas de pincel muy visibles</td>
+                    <td class="causa">Pincel duro/gastado, técnica incorrecta, pintura muy espesa, secado rápido</td>
+                    <td class="solucion">Lijar con grano 600, usar pincel pelo natural, diluir 10% la pintura</td>
+                    <td class="prevencion">Usar pinceles calidad, técnica cruzada, añadir retardante secado</td>
+                </tr>
+                <tr>
+                    <td class="problema">Diferencias de brillo en la superficie</td>
+                    <td class="causa">Absorción desigual, aplicación irregular, mezcla de tipos de pintura</td>
+                    <td class="solucion">Aplicar capa selladora uniforme, lijar suave y reaplicar acabado</td>
+                    <td class="prevencion">Sellar superficie porosa, usar misma marca y línea de producto</td>
+                </tr>
+                <tr>
+                    <td class="problema">Pintura se ampolla o burbujea</td>
+                    <td class="causa">Humedad en la superficie, calor excesivo durante aplicación, superficie contaminada</td>
+                    <td class="solucion">Eliminar ampollas, secar superficie 24h, lijar y repintar</td>
+                    <td class="prevencion">Asegurar superficie seca, evitar sol directo durante pintura</td>
+                </tr>
+                <tr>
+                    <td class="problema">Sangrado de colores subyacentes</td>
+                    <td class="causa">Imprimación insuficiente, solventes agresivos, pigmentos migrantes</td>
+                    <td class="solucion">Aplicar sellador específico, usar pintura base agua sobre problemáticas</td>
+                    <td class="prevencion">Usar imprimación bloqueadora, probar compatibilidad en muestra</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS DE MATERIALES Y TEXTURAS</td>
+                </tr>
+                <tr>
+                    <td class="problema">Texturas artificiales poco realistas</td>
+                    <td class="causa">Un solo material, falta variación, escala incorrecta, patrones repetitivos</td>
+                    <td class="solucion">Mezclar 3-4 materiales diferentes, variar tamaños, estudiar fotos reales</td>
+                    <td class="prevencion">Investigar texturas reales, usar materiales naturales, crear muestras previas</td>
+                </tr>
+                <tr>
+                    <td class="problema">Césped artificial se ve falso</td>
+                    <td class="causa">Un solo tono verde, altura uniforme, distribución regular, brillo excesivo</td>
+                    <td class="solucion">Pintar con 3 tonos verdes, cortar alturas variables, añadir tierra</td>
+                    <td class="prevencion">Usar múltiples tonos, aplicar irregularmente, matizar con pintura</td>
+                </tr>
+                <tr>
+                    <td class="problema">Materiales se deshacen o desintegran</td>
+                    <td class="causa">Baja calidad, falta de fijador, manipulación excesiva, humedad</td>
+                    <td class="solucion">Aplicar fijador acrílico en spray, reemplazar secciones dañadas</td>
+                    <td class="prevencion">Usar materiales archivo, aplicar sellador preventivo, mínima manipulación</td>
+                </tr>
+                <tr>
+                    <td class="problema">Arena o gravilla se dispersa</td>
+                    <td class="causa">Fijación insuficiente, vibración, manipulación, corrientes aire</td>
+                    <td class="solucion">Aplicar cola blanca diluida con spray, aspirar exceso suelto</td>
+                    <td class="prevencion">Fijar con cola antes del secado, aplicar por zonas, usar vitrina</td>
+                </tr>
+                <tr>
+                    <td class="problema">Espuma de poliuretano se deforma</td>
+                    <td class="causa">Calor excesivo, presión continuada, calidad baja, envejecimiento</td>
+                    <td class="solucion">Sustituir sección deformada, reforzar con núcleo rígido interno</td>
+                    <td class="prevencion">Usar espuma alta densidad, evitar temperaturas +30°C, núcleo rígido</td>
+                </tr>
+                <tr>
+                    <td class="problema">Musgos y líquenes naturales se deterioran</td>
+                    <td class="causa">Humedad excesiva, luz UV, manipulación, insectos</td>
+                    <td class="solucion">Sustituir por preservados, aplicar conservante natural</td>
+                    <td class="prevencion">Usar musgos preservados, controlar humedad, filtrar UV</td>
+                </tr>
+                <tr>
+                    <td class="problema">Agua artificial se ve poco convincente</td>
+                    <td class="causa">Superficie plana, falta transparencia, color uniforme, sin movimiento</td>
+                    <td class="solucion">Usar resina transparente, crear ondas con calor, añadir profundidad color</td>
+                    <td class="prevencion">Estudiar agua real, usar resinas específicas, crear diferentes profundidades</td>
+                </tr>
+                <tr>
+                    <td class="problema">Materiales metálicos se oxidan</td>
+                    <td class="causa">Humedad ambiente, falta protección, calidad baja del metal</td>
+                    <td class="solucion">Eliminar óxido con convertidor, aplicar imprimación antioxidante</td>
+                    <td class="prevencion">Usar metales nobles o tratados, aplicar protección preventiva</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS DE ESCALA Y PROPORCIÓN</td>
+                </tr>
+                <tr>
+                    <td class="problema">Elementos fuera de escala</td>
+                    <td class="causa">Falta planificación, no usar referencias, estimación visual incorrecta</td>
+                    <td class="solucion">Recalcular con regla de tres, reemplazar elementos incorrectos</td>
+                    <td class="prevencion">Definir escala numérica (1:50), usar escalímetro, hacer tabla conversión</td>
+                </tr>
+                <tr>
+                    <td class="problema">Perspectiva forzada incorrecta</td>
+                    <td class="causa">Colocación errónea, ángulo visual incorrecto, falta conocimiento perspectiva</td>
+                    <td class="solucion">Reposicionar según punto de fuga, ajustar tamaños progresivamente</td>
+                    <td class="prevencion">Estudiar perspectiva cónica, usar líneas guía, definir punto observación</td>
+                </tr>
+                <tr>
+                    <td class="problema">Figuras humanas desproporcionadas</td>
+                    <td class="causa">Mezcla de escalas diferentes, no considerar edad/sexo, error fabricante</td>
+                    <td class="solucion">Modificar físicamente figuras, crear bases compensatorias</td>
+                    <td class="prevencion">Comprar misma marca/serie, medir alturas reales, usar referencias</td>
+                </tr>
+                <tr>
+                    <td class="problema">Edificios no respetan proporciones arquitectónicas</td>
+                    <td class="causa">Simplificación excesiva, falta referencias técnicas, construcción amateur</td>
+                    <td class="solucion">Consultar planos reales, ajustar proporciones principales</td>
+                    <td class="prevencion">Usar planos arquitectónicos, respetar cánones constructivos</td>
+                </tr>
+                <tr>
+                    <td class="problema">Vegetación fuera de escala natural</td>
+                    <td class="causa">No considerar crecimiento real plantas, usar materiales inadecuados</td>
+                    <td class="solucion">Investigar tamaños reales especies, seleccionar según escala</td>
+                    <td class="prevencion">Consultar guías botánicas, hacer tabla especies/tamaños</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS DE ILUMINACIÓN</td>
+                </tr>
+                <tr>
+                    <td class="problema">Iluminación desigual o sombras incorrectas</td>
+                    <td class="causa">Múltiples fuentes sin coordinación, posición inadecuada, potencia desigual</td>
+                    <td class="solucion">Unificar dirección luz principal, usar reflectores para sombras</td>
+                    <td class="prevencion">Planificar con una fuente principal + relleno, usar dimmer</td>
+                </tr>
+                <tr>
+                    <td class="problema">Cables o elementos eléctricos visibles</td>
+                    <td class="causa">Falta planificación instalación, cables muy gruesos, recorrido inadecuado</td>
+                    <td class="solucion">Crear canales ocultos, usar cables planos, pintar del color base</td>
+                    <td class="prevencion">Planificar instalación eléctrica antes decorar, usar cable fino</td>
+                </tr>
+                <tr>
+                    <td class="problema">LEDs se ven como puntos de luz</td>
+                    <td class="causa">Falta difusión, LEDs muy potentes, distancia insuficiente</td>
+                    <td class="solucion">Añadir material difusor, aumentar distancia, reducir intensidad</td>
+                    <td class="prevencion">Usar tiras LED, material difusor desde diseño, calcular distancias</td>
+                </tr>
+                <tr>
+                    <td class="problema">Calor excesivo de la iluminación</td>
+                    <td class="causa">Lámparas incandescentes, ventilación insuficiente, potencia excesiva</td>
+                    <td class="solucion">Cambiar a LED, mejorar ventilación, usar temporizador</td>
+                    <td class="prevencion">Usar solo LED, calcular disipación térmica, ventilación adecuada</td>
+                </tr>
+                <tr>
+                    <td class="problema">Color de luz inadecuado para la escena</td>
+                    <td class="causa">Temperatura color incorrecta, no considerar ambiente, mezcla fuentes</td>
+                    <td class="solucion">Usar filtros de color, cambiar tipo de LED, unificar fuentes</td>
+                    <td class="prevencion">Elegir temperatura según ambiente (3000K cálido, 6000K frío)</td>
+                </tr>
+                <tr>
+                    <td class="problema">Reflejos no deseados en superficies</td>
+                    <td class="causa">Superficies demasiado brillantes, ángulo luz incorrecto</td>
+                    <td class="solucion">Matizar superficies brillantes, cambiar ángulo iluminación</td>
+                    <td class="prevencion">Usar acabados mate/satinado, probar ángulos iluminación</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS DE CONSERVACIÓN Y MANTENIMIENTO</td>
+                </tr>
+                <tr>
+                    <td class="problema">Acumulación de polvo generalizada</td>
+                    <td class="causa">Falta protección, materiales electroestáticos, ventilación deficiente</td>
+                    <td class="solucion">Limpiar con pincel natural suave, aspiradora boquilla, paño antiestático</td>
+                    <td class="prevencion">Crear vitrina hermética, usar materiales antiestáticos, filtrar aire</td>
+                </tr>
+                <tr>
+                    <td class="problema">Decoloración por luz solar directa</td>
+                    <td class="causa">Rayos UV, exposición prolongada, materiales sensibles, calor</td>
+                    <td class="solucion">Reubicar zona sin sol directo, usar filtros UV en cristales</td>
+                    <td class="prevencion">Materiales resistentes UV, filtros ventanas, rotación ocasional</td>
+                </tr>
+                <tr>
+                    <td class="problema">Daños por humedad (moho, deformación)</td>
+                    <td class="causa">Humedad >65%, ventilación deficiente, materiales orgánicos</td>
+                    <td class="solucion">Deshumidificador, mejorar ventilación, tratamiento antifúngico</td>
+                    <td class="prevencion">Mantener 45-55% humedad, higrómetro, materiales tratados</td>
+                </tr>
+                <tr>
+                    <td class="problema">Insectos que dañan materiales orgánicos</td>
+                    <td class="causa">Materiales naturales sin tratar, ambiente propicio, falta limpieza</td>
+                    <td class="solucion">Tratamiento insecticida específico, eliminar zonas afectadas</td>
+                    <td class="prevencion">Tratar materiales orgánicos, limpieza regular, control ambiental</td>
+                </tr>
+                <tr>
+                    <td class="problema">Desgaste por manipulación excesiva</td>
+                    <td class="causa">Transporte frecuente, falta protección, materiales delicados</td>
+                    <td class="solucion">Reforzar zonas desgastadas, limitar manipulación</td>
+                    <td class="prevencion">Diseñar zonas de agarre, usar materiales resistentes, funda protección</td>
+                </tr>
+                <tr>
+                    <td class="problema">Cambios dimensionales por temperatura</td>
+                    <td class="causa">Variaciones térmicas bruscas, materiales diferentes, falta compensación</td>
+                    <td class="solucion">Permitir acomodación gradual, ajustar uniones</td>
+                    <td class="prevencion">Controlar temperatura ambiente, usar juntas flexibles</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS DE TRANSPORTE Y ALMACENAMIENTO</td>
+                </tr>
+                <tr>
+                    <td class="problema">Roturas durante transporte</td>
+                    <td class="causa">Embalaje insuficiente, elementos frágiles, vibraciones, impactos</td>
+                    <td class="solucion">Reparar con técnicas apropiadas, reforzar para futuro</td>
+                    <td class="prevencion">Embalaje profesional, elementos desmontables, amortiguación adecuada</td>
+                </tr>
+                <tr>
+                    <td class="problema">Desplazamiento de elementos móviles</td>
+                    <td class="causa">Fijación temporal insuficiente, vibración, aceleración</td>
+                    <td class="solucion">Reposicionar elementos, mejorar fijación temporal</td>
+                    <td class="prevencion">Sistema fijación temporal, documentar posiciones originales</td>
+                </tr>
+                <tr>
+                    <td class="problema">Deformación por almacenamiento inadecuado</td>
+                    <td class="causa">Posición incorrecta, peso concentrado, temperatura, humedad</td>
+                    <td class="solucion">Restaurar forma con calor controlado, reforzar estructura</td>
+                    <td class="prevencion">Almacenar horizontal, soporte uniforme, ambiente controlado</td>
+                </tr>
+                <tr>
+                    <td class="problema">Deterioro por almacenamiento prolongado</td>
+                    <td class="causa">Falta mantenimiento, condiciones inadecuadas, materiales degradables</td>
+                    <td class="solucion">Programa restauración, sustitución elementos dañados</td>
+                    <td class="prevencion">Revisiones periódicas, condiciones museo, documentación estado</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS DE TIEMPO Y PLANIFICACIÓN</td>
+                </tr>
+                <tr>
+                    <td class="problema">No cumplir plazos de entrega</td>
+                    <td class="causa">Subestimar tiempo, complicaciones imprevistas, perfeccionismo excesivo</td>
+                    <td class="solucion">Priorizar elementos esenciales, aumentar horas trabajo, pedir prórroga</td>
+                    <td class="prevencion">Cronograma realista +30% tiempo, hitos intermedios, plan contingencia</td>
+                </tr>
+                <tr>
+                    <td class="problema">Agotar materiales a medio proyecto</td>
+                    <td class="causa">Cálculo incorrecto, no considerar desperdicios/errores, cambios diseño</td>
+                    <td class="solucion">Buscar equivalentes, adaptar diseño, comprar urgente</td>
+                    <td class="prevencion">Calcular +25% extra, lista completa previa, proveedores alternativos</td>
+                </tr>
+                <tr>
+                    <td class="problema">Cambios de diseño a medio proyecto</td>
+                    <td class="causa">Planificación insuficiente, nuevas ideas, problemas técnicos</td>
+                    <td class="solucion">Evaluar impacto tiempo/coste, implementar solo críticos</td>
+                    <td class="prevencion">Diseño detallado previo, bocetos múltiples, congelar diseño</td>
+                </tr>
+                <tr>
+                    <td class="problema">Fatiga y pérdida de motivación</td>
+                    <td class="causa">Proyecto muy largo, trabajo intensivo, falta descansos</td>
+                    <td class="solucion">Planificar descansos, dividir en fases, buscar ayuda</td>
+                    <td class="prevencion">Objetivos intermedios, trabajo en sesiones, recompensas parciales</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS TÉCNICOS ESPECÍFICOS</td>
+                </tr>
+                <tr>
+                    <td class="problema">Burbujas en resina epoxi o barniz</td>
+                    <td class="causa">Mezcla muy rápida, temperatura baja, humedad, contaminación</td>
+                    <td class="solucion">Eliminar con pistola calor suave, lijar y reaplicar</td>
+                    <td class="prevencion">Mezclar lentamente, temperatura 20-25°C, deshumidificar, limpiar superficie</td>
+                </tr>
+                <tr>
+                    <td class="problema">Uniones visibles entre piezas ensambladas</td>
+                    <td class="causa">Cortes imprecisos, ensamblaje deficiente, diferente expansión materiales</td>
+                    <td class="solucion">Masilla específica material, lijar progresivo, repintar zona</td>
+                    <td class="prevencion">Herramientas precisión, ingletes perfectos, probar ajuste en seco</td>
+                </tr>
+                <tr>
+                    <td class="problema">Figuras no mantienen posición estable</td>
+                    <td class="causa">Centro gravedad alto, base pequeña, peso mal distribuido</td>
+                    <td class="solucion">Ampliar base, añadir peso interno, modificar postura</td>
+                    <td class="prevencion">Calcular centro gravedad, base mínima 3x altura, peso en base</td>
+                </tr>
+                <tr>
+                    <td class="problema">Adhesivos no curan correctamente</td>
+                    <td class="causa">Temperatura baja, humedad incorrecta, proporción mal medida, caducidad</td>
+                    <td class="solucion">Aplicar calor suave, eliminar y reaplicar correctamente</td>
+                    <td class="prevencion">Verificar condiciones y fechas, medir con precisión, probar antes</td>
+                </tr>
+                <tr>
+                    <td class="problema">Sonidos no deseados (crujidos, vibraciones)</td>
+                    <td class="causa">Uniones rígidas, resonancia, falta amortiguación</td>
+                    <td class="solucion">Añadir material amortiguante, reforzar uniones flojas</td>
+                    <td class="prevencion">Diseñar uniones flexibles, usar materiales amortiguantes</td>
+                </tr>
+                <tr>
+                    <td class="problema">Problemas con motores y mecanismos</td>
+                    <td class="causa">Sobrecarga, falta lubricación, desalineación, desgaste</td>
+                    <td class="solucion">Revisar mecánica, lubricar, realinear ejes, cambiar piezas</td>
+                    <td class="prevencion">Cálculo cargas, mantenimiento preventivo, componentes calidad</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS ESTÉTICOS Y DE COMPOSICIÓN</td>
+                </tr>
+                <tr>
+                    <td class="problema">Composición desequilibrada visualmente</td>
+                    <td class="causa">Falta planificación compositiva, elementos mal distribuidos, sin punto focal</td>
+                    <td class="solucion">Reposicionar elementos principales, crear jerarquía visual</td>
+                    <td class="prevencion">Estudiar regla tercios, crear bocetos compositivos, definir punto focal</td>
+                </tr>
+                <tr>
+                    <td class="problema">Colores no armonizan entre sí</td>
+                    <td class="causa">Falta teoría color, colores saturados excesivos, sin unidad cromática</td>
+                    <td class="solucion">Aplicar filtros color unificadores, reducir saturación, crear paleta coherente</td>
+                    <td class="prevencion">Estudiar círculo cromático, definir paleta previa, usar colores análogos</td>
+                </tr>
+                <tr>
+                    <td class="problema">Falta de profundidad visual</td>
+                    <td class="causa">Todos elementos mismo plano, falta gradación tonal, sin superposiciones</td>
+                    <td class="solucion">Crear diferentes planos, graduar tonos según distancia, añadir superposiciones</td>
+                    <td class="prevencion">Planificar en 3 planos (primer, medio, fondo), usar perspectiva aérea</td>
+                </tr>
+                <tr>
+                    <td class="problema">Exceso de detalles que confunden</td>
+                    <td class="causa">Querer mostrar todo, falta jerarquización, elementos compiten atención</td>
+                    <td class="solucion">Simplificar zonas secundarias, destacar elemento principal</td>
+                    <td class="prevencion">Definir qué es principal/secundario, usar detalle progresivo</td>
+                </tr>
+                <tr>
+                    <td class="problema">Estilo incoherente entre elementos</td>
+                    <td class="causa">Mezcla estilos, diferentes niveles detalle, épocas incompatibles</td>
+                    <td class="solucion">Unificar tratamiento, adaptar elementos discordantes</td>
+                    <td class="prevencion">Definir estilo único, crear guía visual, verificar coherencia</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS DE SEGURIDAD</td>
+                </tr>
+                <tr>
+                    <td class="problema">Elementos cortantes o punzantes expuestos</td>
+                    <td class="causa">Materiales sin proteger, bordes afilados, puntas metálicas</td>
+                    <td class="solucion">Cubrir con protectores, limar bordes, añadir señalización</td>
+                    <td class="prevencion">Evaluar riesgos desde diseño, usar materiales seguros, proteger bordes</td>
+                </tr>
+                <tr>
+                    <td class="problema">Inestabilidad que puede causar caídas</td>
+                    <td class="causa">Centro gravedad alto, base insuficiente, apoyo precario</td>
+                    <td class="solucion">Ampliar base, añadir contrapesos, fijar a superficie</td>
+                    <td class="prevencion">Calcular estabilidad, probar con empuje lateral, base segura</td>
+                </tr>
+                <tr>
+                    <td class="problema">Materiales tóxicos o alergénicos</td>
+                    <td class="causa">Uso productos químicos, materiales sin verificar, falta ventilación</td>
+                    <td class="solucion">Sellar materiales problemáticos, mejorar ventilación</td>
+                    <td class="prevencion">Verificar toxicidad materiales, usar EPIs, etiquetado seguridad</td>
+                </tr>
+                <tr>
+                    <td class="problema">Riesgo eléctrico por instalación deficiente</td>
+                    <td class="causa">Cables pelados, conexiones incorrectas, falta aislamiento</td>
+                    <td class="solucion">Revisar instalación, aislar correctamente, usar protecciones</td>
+                    <td class="prevencion">Instalación por profesional, usar voltajes seguros, protecciones adecuadas</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS DE PRESUPUESTO Y RECURSOS</td>
+                </tr>
+                <tr>
+                    <td class="problema">Sobrecosto del proyecto</td>
+                    <td class="causa">Estimación incorrecta, cambios diseño, materiales caros, desperdicios</td>
+                    <td class="solucion">Buscar alternativas económicas, simplificar diseño, reutilizar materiales</td>
+                    <td class="prevencion">Presupuesto detallado +20%, comparar proveedores, lista prioridades</td>
+                </tr>
+                <tr>
+                    <td class="problema">Herramientas inadecuadas o insuficientes</td>
+                    <td class="causa">No evaluar necesidades, presupuesto limitado, herramientas inadecuadas</td>
+                    <td class="solucion">Alquilar herramientas específicas, adaptar técnicas, buscar préstamos</td>
+                    <td class="prevencion">Lista herramientas necesarias, evaluar alquiler vs compra</td>
+                </tr>
+                <tr>
+                    <td class="problema">Desperdicio excesivo de materiales</td>
+                    <td class="causa">Falta planificación cortes, errores repetidos, compras excesivas</td>
+                    <td class="solucion">Planificar uso restos, proyectos secundarios con sobrantes</td>
+                    <td class="prevencion">Planos de corte optimizados, calcular exacto, guardar restos útiles</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS AMBIENTALES Y ECOLÓGICOS</td>
+                </tr>
+                <tr>
+                    <td class="problema">Uso materiales no sostenibles</td>
+                    <td class="causa">Falta conciencia ambiental, desconocimiento alternativas, coste</td>
+                    <td class="solucion">Sustituir por eco-materiales cuando sea posible</td>
+                    <td class="prevencion">Investigar materiales sostenibles, proveedores responsables</td>
+                </tr>
+                <tr>
+                    <td class="problema">Generación excesiva de residuos</td>
+                    <td class="causa">Falta planificación, materiales no reutilizables, embalajes excesivos</td>
+                    <td class="solucion">Separar para reciclaje, buscar usos alternativos</td>
+                    <td class="prevencion">Planificar gestión residuos, materiales reutilizables, compra a granel</td>
+                </tr>
+                <tr>
+                    <td class="problema">Emisiones tóxicas durante construcción</td>
+                    <td class="causa">Adhesivos con solventes, pinturas base solvente, falta ventilación</td>
+                    <td class="solucion">Mejorar ventilación inmediatamente, usar mascarillas</td>
+                    <td class="prevencion">Productos base agua, ventilación adecuada, EPIs apropiados</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS DE DOCUMENTACIÓN Y REGISTRO</td>
+                </tr>
+                <tr>
+                    <td class="problema">Pérdida de información del proceso</td>
+                    <td class="causa">Falta documentación, no fotografiar etapas, memoria deficiente</td>
+                    <td class="solucion">Intentar reconstruir información, consultar referencias</td>
+                    <td class="prevencion">Fotografiar cada etapa, diario del proyecto, archivo organizado</td>
+                </tr>
+                <tr>
+                    <td class="problema">Dificultad para reproducir técnicas exitosas</td>
+                    <td class="causa">No documentar procedimientos, falta detalle técnico</td>
+                    <td class="solucion">Experimentar hasta recuperar técnica, consultar expertos</td>
+                    <td class="prevencion">Documentar recetas y procedimientos, vídeos proceso</td>
+                </tr>
+                <tr>
+                    <td class="problema">Falta de respaldo ante daños</td>
+                    <td class="causa">No documentar estado original, falta fotografías detalle</td>
+                    <td class="solucion">Fotografiar estado actual como nueva referencia</td>
+                    <td class="prevencion">Fotografías alta resolución todos los ángulos, medidas exactas</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS SOCIALES Y DE COMUNICACIÓN</td>
+                </tr>
+                <tr>
+                    <td class="problema">Malentendidos con el cliente/profesor</td>
+                    <td class="causa">Especificaciones poco claras, falta comunicación, expectativas diferentes</td>
+                    <td class="solucion">Reunión aclaratoria, documentar acuerdos, mostrar avances</td>
+                    <td class="prevencion">Brief detallado por escrito, bocetos aprobados, comunicación regular</td>
+                </tr>
+                <tr>
+                    <td class="problema">Críticas negativas inesperadas</td>
+                    <td class="causa">No validar concepto, falta investigación, subjetividad</td>
+                    <td class="solucion">Analizar críticas constructivas, defender decisiones técnicas</td>
+                    <td class="prevencion">Presentar bocetos previos, investigar referencias, justificar decisiones</td>
+                </tr>
+                <tr>
+                    <td class="problema">Falta reconocimiento del trabajo realizado</td>
+                    <td class="causa">No documentar esfuerzo, trabajo invisible, falta comunicación valor</td>
+                    <td class="solucion">Crear portafolio detallado, documentar proceso completo</td>
+                    <td class="prevencion">Documentar tiempo invertido, explicar complejidad técnica</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS TÉCNICOS DE HERRAMIENTAS</td>
+                </tr>
+                <tr>
+                    <td class="problema">Herramientas de corte desafiladas</td>
+                    <td class="causa">Uso intensivo, falta mantenimiento, calidad baja</td>
+                    <td class="solucion">Afilar profesionalmente, sustituir hojas, ajustar técnica</td>
+                    <td class="prevencion">Mantenimiento regular, herramientas calidad, uso apropiado</td>
+                </tr>
+                <tr>
+                    <td class="problema">Herramientas eléctricas fallan</td>
+                    <td class="causa">Sobrecarga, falta mantenimiento, desgaste, mala calidad</td>
+                    <td class="solucion">Reparar si es viable, alquilar/comprar alternativa</td>
+                    <td class="prevencion">Mantenimiento preventivo, no sobrecargar, calidad adecuada</td>
+                </tr>
+                <tr>
+                    <td class="problema">Mediciones imprecisas repetidas</td>
+                    <td class="causa">Herramientas descalibradas, técnica incorrecta, instrumentos inadecuados</td>
+                    <td class="solucion">Calibrar instrumentos, verificar con múltiples medidas</td>
+                    <td class="prevencion">Instrumentos precisión adecuada, calibración regular, técnica correcta</td>
+                </tr>
+                
+                <tr class="categoria">
+                    <td colspan="4">PROBLEMAS DE ACABADO FINAL</td>
+                </tr>
+                <tr>
+                    <td class="problema">Resultado final no coincide con boceto</td>
+                    <td class="causa">Cambios durante proceso, limitaciones técnicas, boceto poco realista</td>
+                    <td class="solucion">Evaluar si mejorar resultado o aceptar limitaciones</td>
+                    <td class="prevencion">Bocetos realistas técnicamente, maquetas prueba, validar factibilidad</td>
+                </tr>
+                <tr>
+                    <td class="problema">Calidad desigual entre diferentes zonas</td>
+                    <td class="causa">Fatiga progresiva, aprendizaje durante proceso, cambio materiales</td>
+                    <td class="solucion">Homogeneizar calidad, rehacer zonas deficientes</td>
+                    <td class="prevencion">Mantener estándares constantes, descansos regulares, materiales uniformes</td>
+                </tr>
+                <tr>
+                    <td class="problema">Detalles finales no se aprecian</td>
+                    <td class="causa">Escala muy pequeña, ubicación inadecuada, falta contraste</td>
+                    <td class="solucion">Realzar con iluminación, aumentar contraste, reposicionar</td>
+                    <td class="prevencion">Evaluar visibilidad desde distancia normal, jerarquizar detalles</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
